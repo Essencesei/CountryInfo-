@@ -1,0 +1,15 @@
+<div>
+  <input type="text" placeholder="Search" [(ngModel)]="searchQuery" />
+  <div *ngIf="searchQuery.length != 0">
+    Showing Result/s for: {{ searchQuery }}
+  </div>
+</div>
+
+<div class="container">
+  <div *ngFor="let c of countryBasicFiltered" class="card">
+    <a [routerLink]="['/country', c.name]">
+      <img [src]="c.flag" alt="c.name" class="img"
+    /></a>
+    <h2>{{ c.name }}</h2>
+  </div>
+</div>

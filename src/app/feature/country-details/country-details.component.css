@@ -1,0 +1,26 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  width: auto;
+  height: 250px;
+  margin: 0.5rem;
+}
+.img-holder {
+  display: flex;
+}
+.img-holder > :first-child {
+  border: 1px solid black;
+}
+.mapouter {
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 700px) {
+  .img-holder {
+    flex-direction: column;
+  }
+}

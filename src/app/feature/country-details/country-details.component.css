@@ -15,12 +15,38 @@ img {
 .img-holder > :first-child {
   border: 1px solid black;
 }
-.mapouter {
-  margin-top: 1rem;
+marquee {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0.5rem;
+  color: red;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+button {
+  background-color: rgb(61, 218, 61);
+  color: white;
+  padding: 0.5rem;
+  border: 0.5px solid rgb(52, 189, 52);
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+button:hover {
+  transform: translateY(-5px);
+  box-shadow: 1px 1px 20px 1px rgb(231, 231, 231);
+}
+button:active {
+  background-color: rgb(182, 91, 91);
 }
 
 @media screen and (max-width: 700px) {
   .img-holder {
+    flex-direction: column;
+  }
+  .container {
     flex-direction: column;
   }
 }
